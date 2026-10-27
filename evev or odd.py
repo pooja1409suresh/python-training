@@ -228,12 +228,13 @@
 #         s+=i
 # print(s)
 
-
+#join and split use
+#1
 # n=input()
 # a=" ".join(i [::-1] for i in n.split())
 # print(a)
-
-n=input()
-l=n.split()
-for i in l:
-   print (i[::-1],end=" ")
+#2
+# n=input()
+# l=n.split()
+# for i in l:
+#    print (i[::-1],end=" ")

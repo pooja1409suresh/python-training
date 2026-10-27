@@ -218,12 +218,22 @@
 # print(count)
 
 # replace * with vowels
+# n=input()
+# vowel="aeiouAEIOU"
+# s=""
+# for i in n:
+#     if i in vowel:
+#         s+="*"
+#     else:
+#         s+=i
+# print(s)
+
+
+# n=input()
+# a=" ".join(i [::-1] for i in n.split())
+# print(a)
+
 n=input()
-vowel="aeiouAEIOU"
-s=""
-for i in n:
-    if i in vowel:
-        s+="*"
-    else:
-        s+=i
-print(s)
+l=n.split()
+for i in l:
+   print (i[::-1],end=" ")

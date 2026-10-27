@@ -238,3 +238,20 @@
 # l=n.split()
 # for i in l:
 #    print (i[::-1],end=" ")
+
+#anagram
+# a=input()
+# b=input()
+# is_anagram=len(a)==len(b)
+# for char in a:
+#     if a.count(char)!=b.count(char):
+#         is_anagram=False
+# print("anagram"if is_anagram else"not anagram")
+
+def numJewelsInStones(jewels:str,stones:str)->int:
+    count =0
+    for stone in stones:
+        if stone in jewels:
+            count +=1
+            return count
+print(numJewelsInStones("aA","aAAbbbb"))

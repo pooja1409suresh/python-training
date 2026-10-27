@@ -73,22 +73,17 @@
 
 # password
 # password = input("Enter your password: ")
-
 # has_alphabet = False
 # has_number = False
 # has_special = False
-
 # for char in password:
 #     ascii_val = ord(char)
 #     if (65 <= ascii_val <= 90) or (97 <= ascii_val <= 122):
 #         has_alphabet = True
 #     elif 48 <= ascii_val <= 57:
 #         has_number = True
-
 #     elif char != " ":  
 #         has_special = True
-
-# # Validate the password strength
 # if has_alphabet and has_number and has_special:
 #     print("Strong password!")
 # else:
@@ -110,10 +105,12 @@
 # s="hello"
 # print("w"+s[1:])
 
+#using f-string
 # name=input("enter a name: ")
 # age=input("enter your age: ")
 # print(f"my name is {name} and my age is {age}")
 
+# reversing the string and checking the equality
 # n=input()
 # if n[0]==n[-1]:
 #     print("yes")
@@ -128,28 +125,105 @@
 #         count+=1
 # print(count)
 
-# def find_duplicates(text):
-#     seen = set()
-#     duplicates = set()
+# text=input("enter a string")
+# seen=[]
+# duplicates=[]
+# for char in text:
+#    if char==" ":
+#        continue
+#    if char in seen:
+#        if char not in duplicates:
+#            duplicates.append(char)
+#    else:
+#        seen.append(char)
+# print("duplicates: ",duplicates)
 
-#     for char in text:
-#         if char in seen:
-#             duplicates.add(char)
-#         else:
-#             seen.add(char)
 
-#     print("Duplicate characters:", list(duplicates))
-# find_duplicates("banana")
+# t= input()
+# count=0
+# for char in t:
+#     if t.count(char) == 1:
+#         print(f"The first non-repeating character is: '{char}'")
+#         break
+# else:
+#    print("All characters repeat or the string is empty")
 
-text=input("enter a string")
-seen=[]
-duplicates=[]
-for char in text:
-   if char==" ":
-       continue
-   if char in seen:
-       if char not in duplicates:
-           duplicates.append(char)
-   else:
-       seen.append(char)
-print("duplicates: ",duplicates)
+# duplicate char in str
+# s = "programming"
+# for i in range(len(s)):
+#     if s[i] in s[i+1:]:
+#         print(s[i])
+
+# non repeating char in str
+# s="pooja" 
+# count=0
+# for i in range(len(s)):
+#     if s[i]not in s[:i]and s[i]not in s[i+1:]:
+   
+#         print(s[i])
+#         print(s.count(s[i]))
+#         break    
+
+# s=input()
+# for char in s:
+#     print(s[-3:])
+#     break
+
+# s="hello"
+# print(s.upper())
+# print(s.lower())
+# print(s.title())
+# print(s.replace(" ","").upper())
+# print("".join(s.split()))
+# print(s.split())
+# l=[]
+# for i in s:
+#     l+=i
+# print(l)
+
+# s=input()
+# l=s.split()
+# count=0
+# for i in l:
+    
+#     count+=1
+# print("count: ",count)
+
+# count vowels and consonant,igore digit,space and punctuation sample input:hello 123 op:vowels.consonants
+# text=input()
+# vowels="aeiou"
+# consnant="bcdfghjklmnpqrstvwxyz"
+# v=0
+# c=0
+# for i in text:
+#    if i in vowels:
+#        v+=1
+#    if i in consnant:
+#       c+=1
+# print(v,c)
+    
+# COUNT:WORDS STARTING WITH VOWELS 
+#1
+# a=input()
+# vowel=("a","e","i","o","u")
+# count=0
+# for i in a.lower().split():
+#     if i.startswith(vowel):
+#         count+=1
+# print(count)
+
+#2
+#    if i and i[0] in vowel:
+#       count+=1
+# print(count)
+
+# replace * with vowels
+n=input()
+vowel="aeiouAEIOU"
+s=""
+for i in n:
+    if i in vowel:
+        s+="*"
+    else:
+        s+=i
+print(s)

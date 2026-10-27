@@ -128,4 +128,28 @@
 #         count+=1
 # print(count)
 
+# def find_duplicates(text):
+#     seen = set()
+#     duplicates = set()
 
+#     for char in text:
+#         if char in seen:
+#             duplicates.add(char)
+#         else:
+#             seen.add(char)
+
+#     print("Duplicate characters:", list(duplicates))
+# find_duplicates("banana")
+
+text=input("enter a string")
+seen=[]
+duplicates=[]
+for char in text:
+   if char==" ":
+       continue
+   if char in seen:
+       if char not in duplicates:
+           duplicates.append(char)
+   else:
+       seen.append(char)
+print("duplicates: ",duplicates)

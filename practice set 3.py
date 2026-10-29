@@ -150,15 +150,15 @@
 #     else:
 #         print("it is not peterson")
 # strong number
-import math
-num=int(input())
-digit_factorial=0
-for digit in str(num):
-    digit_factorial+=math.factorial(int(digit))
-if digit_factorial==num:
-    print("it is strong number")
-else:
-   print("it is not strong number")
+# import math
+# num=int(input())
+# digit_factorial=0
+# for digit in str(num):
+#     digit_factorial+=math.factorial(int(digit))
+# if digit_factorial==num:
+#     print("it is strong number")
+# else:
+#    print("it is not strong number")
 
 # count divisible by 5
 # count=0
@@ -321,8 +321,3 @@ else:
 #     print("it is strong number")
 # else:
 #     print("it is not strong number")
-
-
-
-
-

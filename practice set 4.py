@@ -169,7 +169,7 @@
 #     print(s[-3:])
 #     break
 
-# s="hello"
+# s="hello world"
 # print(s.upper())
 # print(s.lower())
 # print(s.title())
@@ -248,10 +248,113 @@
 #         is_anagram=False
 # print("anagram"if is_anagram else"not anagram")
 
-def numJewelsInStones(jewels:str,stones:str)->int:
-    count =0
-    for stone in stones:
-        if stone in jewels:
-            count +=1
-            return count
-print(numJewelsInStones("aA","aAAbbbb"))
+# def numJewelsInStones(jewels:str,stones:str)->int:
+#     count =0
+#     for stone in stones:
+#         if stone in jewels:
+#             count +=1
+#             return count
+# print(numJewelsInStones("aA","aAAbbbb"))
+
+# anagram sor tech
+# a=input()
+# b=input()
+# if sorted(a)==sorted(b):
+#     print("anagram")
+# else:
+#     print("not anagram")
+
+# n=input()
+# for i in n:
+#     if n.replace ("n.islower","n.isupper"):
+#          print(i)
+
+# n=input()
+# r=n.swapcase()
+# print(r)
+
+# n=input()
+# u=""
+# for i in n:
+#     if i.islower():
+#         u+=i.upper()
+#     elif i.isupper():
+#         u+=i.lower()
+#     elif i.isdigit():
+#         u+=i
+# print(u)
+
+# n=input()
+# d={}
+# for i in n:
+#   if i in d:
+#      d[i]+=1
+#   else:
+#      d[i]=1
+# print(d)
+# print((max(d,key=d.get)), ":", max(d.values()))
+
+# n=int(input())
+# if 1<=n<=100:
+#     if n%2!=0:
+#         print("Weird")
+#     elif n%2==0 and n in range(2,6):
+#         print("Not Weird")
+#     elif n%2==0 and n in range(6,21):
+#         print("Weird")
+#     elif n%2==0 and n>20:
+#         print("Not Weird")
+#     else:
+#         print("empty")
+   
+# year=int(input())
+# if year%4==0 and year%100!=0 or year%400==0:
+#     print("true")
+# else:
+#         print("false")
+
+# palindromic method 1
+# s=["abc","car","ada","racacar","cool"]
+# found=False
+# for i in s:
+#     if i==i[::-1]:
+#         print(f"the first palindromic string:,{i}")
+#         found=True
+#         break
+# if not found:
+#     print("not palindromic")
+
+# palindromic method 2
+# s=["abc","car","ada","racacar","cool"]
+# for i in s:
+#     if i==i[::-1]:
+#         r=i
+#         break
+#     else:
+#         r=""
+# print(r)
+
+'''def poojha(nums):
+   r,s=[],[]
+   for i in nums:
+      if i!=0:
+         r+=str(i)
+      if i==0:
+         s+=str(i)  
+   return r,s
+print(poojha([1,2,30,0,10,0]))     ''' 
+
+# list=[]
+# n=int(input("subjects:"))
+# t=0
+# for i in range(n):
+#     i=int(input("enter a marks:"))
+#     list.append(i)
+# print(list)
+# for i in list:
+#     t=t+i
+# print(t,t//len(list))
+
+
+
+    

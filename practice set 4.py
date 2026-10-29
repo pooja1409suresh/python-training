@@ -344,17 +344,94 @@
    return r,s
 print(poojha([1,2,30,0,10,0]))     ''' 
 
-# list=[]
-# n=int(input("subjects:"))
-# t=0
-# for i in range(n):
-#     i=int(input("enter a marks:"))
-#     list.append(i)
-# print(list)
+'''list=[]
+n=int(input())
+t=0
+for i in range(n):
+    list.append(i)
+print(list)
+for i in list:
+    t+=i
+print(t,t//len(list))'''
 # for i in list:
 #     t=t+i
 # print(t,t//len(list))
 
 
-
+# n=int(input())
+# list=[]
+# r,s=[],[]
+# for i in range(n):
+#     i=int(input())
+#     list.append(i)
+# print(list)
+# for i in list:
+#     if i!=0:
+#         r.append(i)
+#     else:
+#         s.append(i)
+# print(r+s)
     
+'''n=[1,21,52,8]
+min=n[0]
+max=n[0]
+for i in n:
+    if i>max:
+       max=i
+    if i<min:
+        min=i
+print(max)
+print(min)'''
+
+'''n=[1,21,52,8]
+print(max(n),min(n))
+'''
+
+# n=int(input())
+# arr=[]
+# for i in range(n):
+#     i=int(input())
+#     arr.append(i)
+# max_2=max(arr)
+# for i in arr:
+#     if i==max_2:
+#         arr.remove(i)
+# max=0
+# for i in arr:
+#     if i>max:
+#         max=i
+# print(max)
+
+# t=("e","r",[1,2],"g")
+# print(t[2][1])
+# t[2]=3
+# print(t)
+# r=("k")
+# print(type(r))
+
+# n=int(input())
+# t=tuple(int(x) for x in input().split(","))
+# count=0
+# for i in t:
+#    if i==n:
+#         count+=1
+#    else:
+#          pass
+# print(n,count)
+
+n=int(input("range:"))
+target=int(input("target:"))
+t,count=(),0
+for i in range(n):
+    i=int(input())
+    t=t+(i,)
+print(t)
+for i in t:
+   if i==target:
+        count+=1
+   else:
+       pass
+
+print("tuple:",t,"count:",count)
+
+#leetcode:1480,283

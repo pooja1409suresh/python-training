@@ -43,7 +43,8 @@
 #          print(i) 
 # print(count)
    
-# a=input()
+#count the string
+#  a=input()
 # count=0
 # char_list=[]
 # for i in a:  
@@ -111,12 +112,12 @@
 # print(f"my name is {name} and my age is {age}")
 
 # reversing the string and checking the equality
-# n=input()
-# if n[0]==n[-1]:
-#     print("yes")
-# else:
-#     print("not")
-
+'''n=input()
+if n[0]==n[-1]:
+    print("yes")
+else:
+    print("not")
+'''
 # v=input()
 # a=input()
 # count=0
@@ -185,8 +186,7 @@
 # l=s.split()
 # count=0
 # for i in l:
-    
-#     count+=1
+    #     count+=1
 # print("count: ",count)
 
 # count vowels and consonant,igore digit,space and punctuation sample input:hello 123 op:vowels.consonants
@@ -248,15 +248,16 @@
 #         is_anagram=False
 # print("anagram"if is_anagram else"not anagram")
 
-# def numJewelsInStones(jewels:str,stones:str)->int:
-#     count =0
-#     for stone in stones:
-#         if stone in jewels:
-#             count +=1
-#             return count
-# print(numJewelsInStones("aA","aAAbbbb"))
+#leetcode:771
+'''def numJewelsInStones(jewels:str,stones:str)->int:
+    count =0
+    for stone in stones:
+        if stone in jewels:
+            count +=1
+            return count
+print(numJewelsInStones("aA","aAAbbbb"))'''
 
-# anagram sor tech
+# anagram sort tech
 # a=input()
 # b=input()
 # if sorted(a)==sorted(b):
@@ -353,10 +354,6 @@ print(list)
 for i in list:
     t+=i
 print(t,t//len(list))'''
-# for i in list:
-#     t=t+i
-# print(t,t//len(list))
-
 
 # n=int(input())
 # list=[]
@@ -387,39 +384,39 @@ print(min)'''
 print(max(n),min(n))
 '''
 
-# n=int(input())
-# arr=[]
-# for i in range(n):
-#     i=int(input())
-#     arr.append(i)
-# max_2=max(arr)
-# for i in arr:
-#     if i==max_2:
-#         arr.remove(i)
-# max=0
-# for i in arr:
-#     if i>max:
-#         max=i
-# print(max)
+'''n=int(input())
+arr=[]
+for i in range(n):
+    i=int(input())
+    arr.append(i)
+max_2=max(arr)
+for i in arr:
+    if i==max_2:
+        arr.remove(i)
+max=0
+for i in arr:
+    if i>max:
+        max=i
+print(max)'''
 
-# t=("e","r",[1,2],"g")
-# print(t[2][1])
-# t[2]=3
-# print(t)
-# r=("k")
-# print(type(r))
+'''t=("e","r",[1,2],"g")
+print(t[2][1])
+t[2]=3
+print(t)
+r=("k")
+print(type(r))'''
 
-# n=int(input())
-# t=tuple(int(x) for x in input().split(","))
-# count=0
-# for i in t:
-#    if i==n:
-#         count+=1
-#    else:
-#          pass
-# print(n,count)
+'''n=int(input())
+t=tuple(int(x) for x in input().split(","))
+count=0
+for i in t:
+   if i==n:
+        count+=1
+   else:
+         pass
+print(n,count)'''
 
-n=int(input("range:"))
+'''n=int(input("range:"))
 target=int(input("target:"))
 t,count=(),0
 for i in range(n):
@@ -431,7 +428,76 @@ for i in t:
         count+=1
    else:
        pass
-
 print("tuple:",t,"count:",count)
+'''
+#leetcode:1480, running sum 
+#1
+'''n=list(map(int,input("enter number:").split()))
+c=[]
+t=0
+for i in n:
+    t+=i
+    c.append(t)
+print(c)
+'''
+#2
+'''class Solution(object):
+   def moveZeroes(self, nums):
+      c=[]
+      t=[]
+      for i in nums:
+       i.remove[0]
+       c==i
+      return c
+      for c in 
+        c.append[0]     
+        t==c
+      return t
+print(t)'''
 
-#leetcode:1480,283
+# moving zeros to last,leetcode: 283
+'''f=list(map(int,input("enter number:").split()))
+t=[]
+c=[]
+for i in f:
+    if i==0:
+        c.append(i)
+    if i !=0:
+        t.append(i)
+print(t+c)'''
+
+# leetcode:1768 
+'''word1=input()
+word2=input()
+result=""
+for i in range(min(len(word1),len(word2))):
+    result+=word1[i]
+    result+=word2[i]
+result+=word2[min(len(word2),len(word1)):]
+result+=word1[min(len(word2),len(word1)):]
+
+print(result)'''
+
+# leetcode:2108
+'''class Solution(object):
+    def firstPalindrome(self, words):
+        """
+        :type words: List[str]
+        :rtype: str
+        """
+        n=""
+        for i in words:
+            if i==i[::-1]:
+                n=i 
+                break  
+            else:
+                n= ""
+        return n  '''  
+
+# a={1,2,3}
+# b={2,5,7}
+# print(a|b)
+
+# n=input()
+# m=n.split()
+# print (set(m))
